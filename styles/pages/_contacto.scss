@@ -1,0 +1,86 @@
+.heroContacto {
+  @include padding-X(4rem, 4rem);
+  @include flexColumn;
+  background: transparent url(../img/contacto/hero.png) 0% 0% no-repeat
+    padding-box;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+  align-items: center;
+  .contactoTitulo {
+    font-size: 2rem;
+    @include padding-X(0, 1.5rem);
+  }
+  .titulo {
+    color: $blanco;
+    margin: 0;
+  }
+  .contactoMail {
+    @include padding-X(0, 1rem);
+    @include flexColumn;
+    align-items: center;
+    color: $blanco;
+    text-decoration: none;
+
+    .contactoImagen {
+      width: 5rem;
+    }
+  }
+}
+.contactoRedes {
+  @include padding-X(4rem, 0);
+  gap: 1rem;
+  justify-content: center;
+  .instagram {
+    @include flexColumn;
+    padding-top: 0.5rem;
+    align-items: center;
+    text-decoration: none;
+    p {
+      font-family: $sans;
+      font-weight: $sans-bold;
+      font-size: $texto;
+      color: $negroTextos;
+    }
+  }
+  .youtube {
+    @extend .instagram;
+  }
+  .linkedin {
+    @extend .instagram;
+  }
+}
+.preguntas {
+  @include flexColumn;
+  justify-content: center;
+  @include padding-X(6rem, 8rem);
+  .titulo {
+    @include padding-X(0, 3rem);
+  }
+  .accordion {
+    @media (min-width: 768px) {
+      & {
+        align-self: center;
+        width: 75%;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: $acordion;
+      border: none;
+    }
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+    .accordion-button:after {
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffa443'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+    }
+  }
+  .fondoAcordion {
+    background-color: $acordion;
+    color: $negroTextos;
+  }
+}

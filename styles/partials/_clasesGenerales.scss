@@ -1,0 +1,36 @@
+html {
+  font-size: 16px !important;
+  font-family: $sans;
+  background-color: $blanco;
+}
+.titulo {
+  font-family: $sans !important;
+  font-weight: $sans-bold;
+  font-size: $titulo;
+  color: $negroTextos;
+  text-align: center;
+}
+.subtitulo {
+  @extend .titulo;
+  font-size: $subtitulo;
+}
+.texto {
+  font-size: $texto;
+  font-family: $sans !important;
+  color: $negroTextos;
+}
+.blanco {
+  color: $blanco;
+}
+.botonCeleste {
+  background-color: $celesteBotones;
+  color: $blanco;
+  font-family: $sans;
+  font-size: $botonesLetra;
+  @include hoverCeleste;
+}
+.botonNegro {
+  background-color: $grisBotones;
+  color: $blanco;
+  @include hoverNegro;
+}

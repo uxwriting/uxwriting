@@ -1,0 +1,51 @@
+
+
+.snMainContainer {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+    .snBienvenidosContainer {
+        width: 60%;
+        margin: auto;
+    }
+
+    .SnNosotras, .SnMision {
+        justify-content: space-evenly;
+        padding: 2rem;
+    }
+
+    .bienvenida2Sn {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+@media (min-width: 768px) {
+    .snMainContainer {
+    margin-top: 6.4rem;
+    margin-bottom: 4.8rem;
+    }    
+
+    .SnNosotras, .SnMision {
+        justify-content: space-between !important;
+        align-items: center;
+        img {
+            width: -webkit-fill-available;
+            height: fit-content !important;
+        }
+    }
+}
+ @media (max-width: 576px) {
+    .SnNosotras, .SnMision {
+        img {
+            width: inherit;
+        }
+    }
+
+    
+  
+} 

@@ -1,0 +1,151 @@
+.heroNovedades {
+  @include padding-X(4rem, 4rem);
+  @include sizes(100%, auto);
+  top: 20px;
+  background-image: url("../img/novedades/heroNovedades.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.botonBlog {
+  background: $grisBotones;
+  color: #ffff;
+}
+.seccionYbNovedades {
+  background-color: #efefef;
+  padding: 2rem;
+  padding-bottom: 8rem;
+  .iconoYbNovedades {
+    width: 6rem;
+  }
+  a {
+    text-decoration: none;
+    padding-left: 1rem;
+  }
+}
+.linkNovedades {
+  text-decoration: none;
+  color: #ffff;
+}
+.eventos {
+  @include padding-X(2rem, 4rem);
+  justify-content: center;
+  gap: 2rem;
+  h4 {
+    @include padding-X(3.5rem, 2rem);
+  }
+  .eventosTarjeta {
+    @include padding-Y(2rem, 2rem);
+    @media (min-width: 576px) {
+      & {
+        @include padding-Y(4rem, 4rem);
+      }
+    }
+    @media (min-width: 768px) {
+      & {
+        @include padding-Y(0rem, 0rem);
+        flex-basis: 42%;
+      }
+    }
+    @media (min-width: 992px) {
+      & {
+        padding: 0;
+        flex-basis: 45%;
+      }
+    }
+    .col-lg-5 {
+      @media (min-width: 992px) {
+        & {
+          padding: 0;
+        }
+      }
+      img {
+        @media (min-width: 992px) {
+          & {
+            height: 100%;
+          }
+        }
+      }
+    }
+    .col-lg-7 {
+      @media (min-width: 992px) {
+        & {
+          padding: 0;
+        }
+      }
+      .eventosTarjetaCuerpo {
+        @include flexColumn;
+        @media (min-width: 992px) {
+          & {
+            height: 100%;
+            justify-content: space-between;
+          }
+        }
+        h5 {
+          @include padding-X(0, 1rem);
+          @media (min-width: 992px) {
+            & {
+              @include padding-X(0, 0);
+              text-align: start;
+            }
+          }
+        }
+        p {
+          text-align: center;
+          @media (min-width: 992px) {
+            & {
+              text-align: start;
+            }
+          }
+        }
+        .eventosBoton {
+          align-self: center;
+          @media (min-width: 992px) {
+            & {
+              align-self: flex-end;
+            }
+          }
+        }
+      }
+    }
+  }
+  .botonMasEventosCaja {
+    @include flexJusCen;
+    @include padding-X(2rem, 2rem);
+    .botonMasEventos {
+      width: 140px;
+    }
+  }
+}
+.repositorio {
+  @include padding-X(2rem, 4rem);
+  justify-content: center;
+  .repositorioTarjeta {
+    @include flexJusCen;
+    .repositorioTarjetaCuerpo {
+      @include flexColumn;
+    }
+  }
+  .repositorioBotonCaja {
+    @include flexJusCen;
+    @include padding-X(2rem, 2rem);
+    .repositorioBoton {
+      font-family: $sans;
+      width: 152px;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .heroNovedades {
+    background-image: url("../img/novedades/heroNovedades_mob.png");
+  }
+  .containeryt {
+    padding: 0;
+  }
+  .imgYbNovedades {
+    width: 100%;
+  }
+}

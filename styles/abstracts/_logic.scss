@@ -1,0 +1,47 @@
+// mixin para height y width
+@mixin sizes($width, $height) {
+  height: $height;
+  width: $width;
+}
+// mixin para padding y margin, horizontal y vertical
+@mixin padding-X($padding-top, $padding-bottom) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+}
+@mixin padding-Y($padding-right, $padding-left) {
+  padding-right: $padding-right;
+  padding-left: $padding-left;
+}
+@mixin margin-X($margin-top, $margin-bottom) {
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+}
+@mixin margin-Y($margin-right, $margin-left) {
+  margin-right: $margin-right;
+  margin-left: $margin-left;
+}
+// mixin para flex column y flex justify center
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flexJusCen {
+  display: flex;
+  justify-content: center;
+}
+@mixin hoverCeleste {
+  &:hover {
+    transition: 0.2s;
+    color: $blanco;
+    background-color: $celesteHover;
+    box-shadow: 6px 10px 10px #00000029;
+  }
+}
+@mixin hoverNegro {
+  &:hover {
+    color: $blanco;
+    transition: 0.2s;
+    background-color: $negroHover;
+    box-shadow: 6px 10px 10px #00000029;
+  }
+}
