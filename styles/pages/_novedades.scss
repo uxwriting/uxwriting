@@ -27,6 +27,9 @@
 .linkNovedades {
   text-decoration: none;
   color: #ffff;
+  &:hover {
+    color: #ffff;
+  }
 }
 .eventos {
   @include padding-X(2rem, 4rem);

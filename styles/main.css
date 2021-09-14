@@ -189,7 +189,7 @@ html {
 
 .carousel-inner .textoCarrusel .botonCarrusel:hover {
   background: #fc8200;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -217,7 +217,7 @@ html {
 
 .homeCursos .card .card-text {
   font-size: 1.125rem;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .homeSobreNosotras {
@@ -242,9 +242,6 @@ html {
 }
 
 @media (min-width: 992px) {
-  .tituloCarrusel {
-    margin-top: 40vh !important;
-  }
   .texto1 {
     width: 45%;
   }
@@ -275,6 +272,12 @@ html {
   }
   .homeCursos {
     margin-bottom: 8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tituloCarrusel {
+    margin-top: 32vh !important;
   }
 }
 
@@ -588,6 +591,10 @@ html {
 
 .linkNovedades {
   text-decoration: none;
+  color: #ffff;
+}
+
+.linkNovedades:hover {
   color: #ffff;
 }
 
